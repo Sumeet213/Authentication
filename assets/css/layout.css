@@ -1,0 +1,65 @@
+body {
+  margin-left: 0%;
+  margin-top: 0px;
+  margin-right: 0px;
+  background-color: aqua;
+  color: aliceblue;
+  /* text-align: center; */
+}
+
+.head {
+  margin-left: 20%;
+  color: aliceblue;
+  margin-top: 120px;
+}
+.actions {
+  /* background-color: blueviolet; */
+  margin-left: 23%;
+  margin-right: 20%;
+  height: 60px;
+  display: flex;
+  flex-direction: row;
+}
+
+.links {
+  margin-left: 20px;
+  width: 10%;
+  /* background-color: brown; */
+  height: 40px;
+  margin-right: 20px;
+  padding-left: 32px;
+  padding-top: 20px;
+}
+
+.links a {
+  color: aliceblue;
+  font-size: 20px;
+  /* text-decoration: none; */
+}
+
+.form {
+  margin-left: 20%;
+  display: flex;
+  flex-direction: column;
+}
+
+.form-input input {
+  height: 40px;
+  width: 60%;
+  margin-bottom: 10px;
+  border-radius: 4px;
+  border-width: 0;
+}
+
+.headings {
+  margin-left: 40%;
+  color: aliceblue;
+  margin-top: 10px;
+}
+
+.headingsG a {
+  margin-left: 30%;
+  color: aliceblue;
+  margin-top: 10px;
+  text-decoration: none;
+}

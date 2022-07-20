@@ -1,0 +1,30 @@
+<div class="head">
+  <h1>
+    Sign In
+    <!-- / <%= title %> -->
+  </h1>
+</div>
+<!-- <h1>sign In</h1> -->
+<div class="form">
+  <form action="/users/create-session" method="POST">
+    <div class="form-input">
+      <input type="email" name="email" placeholder="Your email" required />
+    </div>
+    <div class="form-input">
+      <input
+        type="password"
+        name="password"
+        placeholder="Your password"
+        required
+      />
+    </div>
+    <div class="form-input">
+      <input type="Submit" value="Sign In" />
+    </div>
+    <!-- <button>Submit</button> -->
+  </form>
+</div>
+<h2 class="headings">Or</h2>
+<h3 class="headingsG">
+  <a href="/users/auth/google">Sign In/ Sign Up with Google</a>
+</h3>
