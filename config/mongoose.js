@@ -1,7 +1,7 @@
 const mongoose = require('mongoose');
 require("dotenv").config();
 
-mongoose.connect('mongodb+srv://sam:1234@cluster0.i2kdp.mongodb.net/?retryWrites=true&w=majority');
+mongoose.connect(process.env.MONGODB_URI);
 
 const db = mongoose.connection;
 
