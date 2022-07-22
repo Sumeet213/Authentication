@@ -45,7 +45,7 @@ app.use(session({
     },
     store: MongoStore.create(
         {
-            mongoUrl: 'mongodb+srv://sam:1234@cluster0.i2kdp.mongodb.net/?retryWrites=true&w=majority',
+            mongoUrl: process.env.MONGODB_URI,
             autoRemove: 'disabled'
         
         },
@@ -69,7 +69,7 @@ app.use('/', require('./routes'));
 
 
 
-app.listen(process.env.MONGODB_URI, '0.0.0.0',function(err){
+app.listen(process.env.PORT, '0.0.0.0',function(err){
     if (err){
         console.log(`Error in running the server: ${err}`);
     }
