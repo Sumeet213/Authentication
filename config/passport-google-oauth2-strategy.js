@@ -8,9 +8,9 @@ require("dotenv").config();
 passport.use(
   new googleStrategy(
     {
-      clientID: `${process.env.googleClientId}`,
-      clientSecret: `${process.env.googleClientSecret}`,
-      callbackURL: `${process.env.googleCallbackUrl}`,
+      clientID: "568188515883-ptp4gljqq3mhagmem2rq4p3mlc8bces8.apps.googleusercontent.com",
+      clientSecret: "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",
+      callbackURL:"http://localhost:8000/users/auth/google/callback",
     },
 
     // find user
@@ -36,7 +36,7 @@ passport.use(
             {
               name: profile.displayName,
               email: profile.emails[0].value,
-              // password: crypto.randomBytes(20).toString("hex"),
+              password: crypto.randomBytes(20).toString("hex"),
             },
             function (err, user) {
               if (err) {

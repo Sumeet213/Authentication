@@ -2,14 +2,13 @@ body {
   margin-left: 0%;
   margin-top: 0px;
   margin-right: 0px;
-  background-color: aqua;
-  color: aliceblue;
+  color: black;
   /* text-align: center; */
 }
 
 .head {
   margin-left: 20%;
-  color: aliceblue;
+  color: black;
   margin-top: 120px;
 }
 .actions {
@@ -32,7 +31,7 @@ body {
 }
 
 .links a {
-  color: aliceblue;
+  color: black;
   font-size: 20px;
   /* text-decoration: none; */
 }
@@ -53,13 +52,13 @@ body {
 
 .headings {
   margin-left: 40%;
-  color: aliceblue;
+  color: black;
   margin-top: 10px;
 }
 
 .headingsG a {
   margin-left: 30%;
-  color: aliceblue;
+  color: black;
   margin-top: 10px;
   text-decoration: none;
 }

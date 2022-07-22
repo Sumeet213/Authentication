@@ -1,6 +1,7 @@
 const mongoose = require('mongoose');
+require("dotenv").config();
 
-mongoose.connect('mongodb://127.0.0.1/codeial_development');
+mongoose.connect('mongodb+srv://sam:1234@cluster0.i2kdp.mongodb.net/?retryWrites=true&w=majority');
 
 const db = mongoose.connection;
 
