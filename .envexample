@@ -1,7 +1,0 @@
-googleClientId=
-googleClientSecret=
-googleCallbackUrl=
-codeialJwtSecret=
-PORT=8000
-MONGODB_URI=
-secretKey=
