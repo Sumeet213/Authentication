@@ -1,11 +1,15 @@
 const User = require("../models/user");
 const crypto = require("crypto");
 module.exports.profile = function (req, res) {
+  if (req.cookies.user_id) {
   return res.render("user_profile", {
     title: "User Profile",
     // user: user,
   });
-
+  }else {
+    console.log("entered Headers");
+    return res.redirect("/users/sign-in");
+  }
 };
 
 // sign up page
@@ -113,9 +117,14 @@ module.exports.signOut = function (req, res) {
 
 // render reset password page
 module.exports.resetPassword = function (req, res) {
+  if (req.cookies.user_id){
   return res.render("user_reset_password", {
     title: "Authentication | Reset Password",
   });
+}
+else{
+  return res.redirect("/users/sign-in");
+}
 };
 
 // reset password

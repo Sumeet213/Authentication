@@ -1,5 +1,6 @@
 const express = require("express");
 const passport = require("passport");
+const passportLocal = require("../config/passport-local-strategy");
 // const passportLocal = require("../config/passport-local-strategy");
 const passportGoogle = require("../config/passport-google-oauth2-strategy");
 const router = express.Router();
@@ -7,8 +8,8 @@ const homeController = require("../controllers/home_controller");
 const app = express();
 console.log("router loaded");
 
-router.get("/",checkAuthenticated, homeController.home);
-router.use("/users", require("./users"));
+router.get("/",homeController.home);
+router.use("/users",require("./users"));
 
 app.use(passport.initialize());
 app.use(passport.session());
